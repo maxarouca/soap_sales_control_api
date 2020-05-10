@@ -87,6 +87,13 @@ Returns the total sales in a given period, together with the discounted rate and
 
 This endpoint allows login to the application through registered email and password. A token is returned which must be used for other requests.
 
+```
+{
+	"email": "jhon@gmail.com",
+	"password": "123456"
+}
+```
+
 #### Register - http://localhost:3333/users (POST)
 
 This endpoint allows the registration of users. It is necessary to send a JSON in the format below.
