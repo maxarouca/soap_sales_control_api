@@ -87,6 +87,32 @@ Returns the total sales in a given period, together with the discounted rate and
 
 This endpoint allows login to the application through registered email and password. A token is returned which must be used for other requests.
 
+#### Register - http://localhost:3333/users (POST)
+
+This endpoint allows the registration of users. It is necessary to send a JSON in the format below.
+
+```
+{
+	"name": "Jhon Doe",
+	"email": "jhon@gmail.com",
+	"password": "123456"
+}
+```
+
+#### Update User - http://localhost:3333/users (PUT)
+
+This endpoint allows updating a user, such as changing the password. It is necessary to send a JSON in the format below.
+```
+{
+	"name": "Jhon Doe",
+	"email": "jhon@gmail.com",
+	"oldPpassword": "123456",
+	"password": "1234567",
+	"confirmPassword": "1234567"
+}
+```
+
+
 ## Contributing
 
 1. Fork it (<https://github.com/maxarouca/soap_sales_control_api>)
