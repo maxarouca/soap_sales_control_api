@@ -44,7 +44,7 @@ Returns a list of all registered Sales
 
 #### Create SALE - http://localhost:3333/sales (POST)
 
-Insert a new Sale in the database. A json is expected in the request body containing name, email, whatsapp, city, uf.
+Insert a new Sale in the database. A json is expected in the request body containing quantity, date, tax, is_pay, total and unitary_value.
 
 ```js
 {
